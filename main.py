@@ -42,7 +42,7 @@ class BookingResponse(BaseModel):
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello from Koyeb"}
+    return {"message": "Hello from Deepanshu"}
 
 
 @app.get("/seats")
