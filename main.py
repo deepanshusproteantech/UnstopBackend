@@ -40,6 +40,11 @@ class BookingResponse(BaseModel):
     booked_seats: List[int]
 
 
+@app.get("/")
+def read_root():
+    return {"message": "Hello from Koyeb"}
+
+
 @app.get("/seats")
 def get_seats():
     conn = get_db_connection()
