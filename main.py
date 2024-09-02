@@ -24,10 +24,11 @@ app.add_middleware(
 # MySQL database connection
 def get_db_connection():
     connection = mysql.connector.connect(
-        host="localhost",  # Update with your MySQL host
-        user="root",  # Update with your MySQL username
-        password="root",  # Update with your MySQL password
-        database="train_booking"
+        host="sql12.freemysqlhosting.net",  # Update with your MySQL host
+        user="sql12728958",  # Update with your MySQL username
+        password="q11bEisfjX",  # Update with your MySQL password
+        database="sql12728958",
+        port="3306"
     )
     return connection
 
@@ -104,4 +105,4 @@ def book_seats(booking: BookingRequest):
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run(app, host="0.0.0.0", port=8088)
+    uvicorn.run(app, host="0.0.0.0")
