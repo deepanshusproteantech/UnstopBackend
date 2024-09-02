@@ -8,7 +8,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 origin = [
-    "http://localhost:4200",
+    "https://deepanshusproteantech.github.io",
 ]
 
 # Add the CORSMiddleware
